@@ -13,13 +13,13 @@
     <label for="taskName">Task Name</label>
     <input type="text" id="taskName" name="taskName"/>
     
-     <label for="taskTime">Task Time</label>
+    <label for="taskTime">Task Time</label>
     <input type="time" id="taskTime" name="taskTime"/>
 
     
      <label for="taskDay">Task Time</label>
     <input type="date" id="taskDay" name="taskDay"/>
-
+<button type="button" class="btn btn-default" onclick="submitTasks();">Submit</button>
     <div id="tasks">
         <table style="width:100%">
                 <tr>
@@ -27,6 +27,9 @@
                         <th>Task Time</th>
                         <th> Task Day </th>
                         </tr>
+                        <div id="ShowData">
+
+                        </div>
         </table>
         </div>
 
