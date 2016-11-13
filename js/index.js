@@ -1,5 +1,3 @@
-
-
 var tasksList={};
 
 var submitTasks=function(){
@@ -12,6 +10,15 @@ function moveItemsToList(taskTitle){
     };
 }
 
+var checkForDoubleDates = function(){
+    for(var listItem in tasksList){
+        if(tasksList[listItem]['taskDate'] === taskDay || tasksList[listItem]['taskTime']  === taskTime){
+            console.log('it is the same as ' + tasksList[listItem]['task'])
+        }
+    }
+};
+
+checkForDoubleDates();
 moveItemsToList(taskName);
 console.log(tasksList);
 };
