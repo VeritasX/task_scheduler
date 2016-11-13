@@ -2,6 +2,7 @@ var tasksList={};
 
 var submitTasks=function(){
 var taskName = $('#taskName').val(), taskTime = $('#taskTime').val(), taskDay = $('#taskDay').val(), thereIsADouble;
+$('#alerts').empty();
 function moveItemsToList(taskTitle){
  tasksList[taskTitle] =  {
         task:taskName,
